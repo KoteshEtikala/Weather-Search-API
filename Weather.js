@@ -8,6 +8,7 @@ let temparature=document.getElementById("tem")
 let humidity=document.getElementById("humm")
 let img=document.querySelector("img")
 let disk=document.querySelector("#disk")
+// let background=document.querySelector("#back")
 // console.log(loc)
 // console.log(search)
 // console.log(temparature)
@@ -37,6 +38,7 @@ console.log(weather2.weather[0].description)
 switch(weather2.weather[0].description){
     case 'haze':
         img.src="haze.png"
+        // background.src="haze.png"
         break;   
     case 'snow':
         img.src="snow.png"
@@ -57,6 +59,8 @@ switch(weather2.weather[0].description){
         img.src="./images.png"
         break;           
     }
+
+    // switch(weather2.weather[0].description)
 }
 
 

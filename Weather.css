@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     background-color: #333;
+    
 
 }
 #cart{
@@ -49,21 +50,27 @@ img{
 
 }
 #loc::placeholder{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
     font-weight: normal;
-    color:blue;
+}
+#loc:focus{
+    border: 2px solid blue;
+    
+}
+#loc::placeholder:focus{
+    color: blue;
+
 }
 button{
-    height: 48px;
+    height: 46px;
     width: 50px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     border: 2px solid gainsboro;
     outline: none;
     position: relative;
-    left: 101px;
-
+    left: 99px;
 }
 #Weatherdata{
     display: flex;
@@ -81,4 +88,20 @@ button{
     font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
+}
+
+@media (max-width:360px){
+    #cart{
+        height:300px;
+        width: 250px;
+    }
+    #loc{
+        height: 35px;
+        width: 200px;
+    }
+    button{
+        height:35px;
+        width: 30px;
+        
+    }
 }
